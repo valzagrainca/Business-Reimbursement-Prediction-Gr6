@@ -6,10 +6,13 @@
 - **Level:** Master's
 - **Lecture:** Machine Learning
 - **Lecturer:** Prof.Dr.Ing. Lule Ahmedi, PhD.c Mërgim H. HOTI
-
+- **Students:** Valëza Grainca and Artan Thaqi
+  
 ## Dataset Details
 - **Source:** "https://www.atk-ks.org/en/open-data/"
 - **Description:** The dataset comprises reimbursement requests and approvals for businesses operating in Kosovo
+- **Size:**:  4018 rows
+- **Attributes:**:  14
 - **Format:** Excel
 
 ## Overview
