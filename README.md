@@ -61,6 +61,5 @@ This project aims to develop a machine learning model capable of predicting the 
 
    ![Skewed Data 1](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/cbfd929d-7d64-4d5c-ace2-827d9acc7135)
    ![Skewed Data 2](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/7d4f0beb-a053-43a1-8fd3-34abdd636bcd)
-   <p align="center">
-     <img src="https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/853df3d5-7f3b-4e15-a6f8-26fa5c4d0430" alt="Skewed Data 3">
-   </p>
+   ![Skewed Data 2](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/853df3d5-7f3b-4e15-a6f8-26fa5c4d0430)
+
