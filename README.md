@@ -65,3 +65,56 @@ This project aims to develop a machine learning model capable of predicting the 
 
    - **Size of dataset after preprocessing steps of phase one:** 3923 rows
 
+## Phase 2
+### Model Training, Feature Importance Visualization, and Residual Analysis
+
+1. **Model Selection:**
+   - Utilized two regression algorithms for training the dataset:
+     - Random Forest Regressor
+     - Gradient Boosting Regressor
+
+2. **Model Training:**
+   - Trained the dataset using both Random Forest Regressor and Gradient Boosting Regressor algorithms to capture the complex relationships between features and target variable.
+
+3. **Feature Importance Visualization:**
+   - **Random Forest Regressor:**
+     - Visualized the most important features derived by the Random Forest Regressor model to understand which attributes significantly influence the prediction of business reimbursements.
+     - **Example Visualization:**
+       ![Random Forest Feature Importance](images/Residuals_random_forest.png)
+       
+   - **Gradient Boosting Regressor:**
+     - Visualized the most important features derived by the Gradient Boosting Regressor model to understand the significant factors affecting the prediction of business reimbursements.
+     - **Example Visualization:**
+       ![Gradient Boosting Feature Importance](images/features_gradient_boosting.png)
+
+4. **Residual Analysis:**
+   - Conducted residual analysis for both Random Forest Regressor and Gradient Boosting Regressor models to evaluate their performance and identify any patterns or trends in prediction errors.
+   - Residual plots were generated to visualize the distribution of residuals for each model.
+
+   - **Random Forest Regressor Residual Plot:**
+     ![Random Forest Residual Plot](images/Residuals_random_forest.png)
+
+   - **Gradient Boosting Regressor Residual Plot:**
+     ![Gradient Boosting Residual Plot](images/Residuals_gradient_boosting.png)
+
+5. **Model Evaluation:**
+   - Assessed the performance of both models using the following evaluation metrics:
+
+     - **Random Forest Regressor:**
+       - Mean Absolute Error: 8601.052059560508 means, on average, predictions are off by approximately $8601.05 from the actual values.
+       - Mean Squared Error: 935525702.3306482 means, on average, the squared errors of predictions are approximately $935,525,702.33.
+       - Root Mean Squared Error: 30586.364647186303 means, on average, predictions are off by approximately $30,586.36 from the actual values.
+       - R-squared: 0.9281562779290515 means the model explains approximately 93% of the variance in the target variable, indicating a good fit.
+
+     - **Gradient Boosting Regressor:**
+       - Mean Absolute Error: 11892.009915317158 means, on average, predictions are off by approximately $11,892.01 from the actual values.
+       - Mean Squared Error: 1202359162.0518725 means, on average, the squared errors of predictions are approximately $1,202,359,162.05.
+       - Root Mean Squared Error: 34675.05100287341 means, on average, predictions are off by approximately $34,675.05 from the actual values.
+       - R-squared: 0.9076647950422823 means the model explains approximately 91% of the variance in the target variable, indicating a good fit.
+
+6. **Conclusion:**
+   - Summarized the findings from Phase 2, highlighting the superior performance of Random Forest Regressor over Gradient Boosting Regressor based on the evaluation metrics and residual analysis.
+    - The random forest regressor provided better results as we can see in below picture the actural vs. predicted values from both two models
+    ![Comparison](images/comparison.png)
+
+
