@@ -80,8 +80,8 @@ This project aims to develop a machine learning model capable of predicting the 
    - **Random Forest Regressor:**
      - Visualized the most important features derived by the Random Forest Regressor model to understand which attributes significantly influence the prediction of business reimbursements.
      - **Example Visualization:**
-       ![Random Forest Feature Importance](images/Residuals_random_forest.png)
-       
+       ![Random Forest Feature Importance](images/Features_random_forest.png)
+
    - **Gradient Boosting Regressor:**
      - Visualized the most important features derived by the Gradient Boosting Regressor model to understand the significant factors affecting the prediction of business reimbursements.
      - **Example Visualization:**
