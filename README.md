@@ -76,7 +76,21 @@ This project aims to develop a machine learning model capable of predicting the 
 2. **Model Training:**
    - Trained the dataset using both Random Forest Regressor and Gradient Boosting Regressor algorithms to capture the complex relationships between features and target variable.
 
-3. **Feature Importance Visualization:**
+3. **Selected Features for Prediction:**
+   - The following features were selected for predicting business reimbursements for both models:
+     - 'Viti' (Year)
+     - 'Muaji' (Month)
+     - 'Numri i Kërkesave' (Number of Requests)
+     - 'Vlera e Kërkura' (Requested Amount)
+     - 'Numri i Kërkesave të Aprovuara' (Number of Approved Requests)
+     - 'Tatimpaguesve në kategorinë A' (Taxpayers in Category A)
+     - 'Tatimpaguesve në kategorinë B' (Taxpayers in Category B)
+     - 'Tatimpaguesve në kategorinë C' (Taxpayers in Category C)
+
+4. **Target Variable:**
+   - Our goal is to predict the 'Vlera e Aprovuar' (Approved Amount) for business reimbursements.
+
+5. **Feature Importance Visualization:**
    - **Random Forest Regressor:**
      - Visualized the most important features derived by the Random Forest Regressor model to understand which attributes significantly influence the prediction of business reimbursements.
      - **Example Visualization:**
@@ -87,7 +101,7 @@ This project aims to develop a machine learning model capable of predicting the 
      - **Example Visualization:**
        ![Gradient Boosting Feature Importance](images/features_gradient_boosting.png)
 
-4. **Residual Analysis:**
+6. **Residual Analysis:**
    - Conducted residual analysis for both Random Forest Regressor and Gradient Boosting Regressor models to evaluate their performance and identify any patterns or trends in prediction errors.
    - Residual plots were generated to visualize the distribution of residuals for each model.
 
@@ -97,7 +111,7 @@ This project aims to develop a machine learning model capable of predicting the 
    - **Gradient Boosting Regressor Residual Plot:**
      ![Gradient Boosting Residual Plot](images/Residuals_gradient_boosting.png)
 
-5. **Model Evaluation:**
+7. **Model Evaluation:**
    - Assessed the performance of both models using the following evaluation metrics:
 
      - **Random Forest Regressor:**
@@ -112,7 +126,7 @@ This project aims to develop a machine learning model capable of predicting the 
        - Root Mean Squared Error: 34675.05100287341 means, on average, predictions are off by approximately $34,675.05 from the actual values.
        - R-squared: 0.9076647950422823 means the model explains approximately 91% of the variance in the target variable, indicating a good fit.
 
-6. **Conclusion:**
+8. **Conclusion:**
    - Summarized the findings from Phase 2, highlighting the superior performance of Random Forest Regressor over Gradient Boosting Regressor based on the evaluation metrics and residual analysis.
     - The random forest regressor provided better results as we can see in below picture the actural vs. predicted values from both two models
     ![Comparison](images/comparison.png)
