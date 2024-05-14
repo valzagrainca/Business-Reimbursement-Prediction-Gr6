@@ -131,4 +131,65 @@ This project aims to develop a machine learning model capable of predicting the 
     - The random forest regressor provided better results as we can see in below picture the actural vs. predicted values from both two models
     ![Comparison](images/comparison.png)
 
+## Phase 3
+### Analysis and Evaluation (Retraining)
+
+1. **Model Selection Criteria:**
+   - We chose these models based on their robustness, flexibility, and ability to handle both numerical and categorical features present in our dataset.
+   - Additionally, both Random Forest and Gradient Boosting are known for their excellent performance in regression tasks and are widely used in various industries for predictive modeling.
+
+2. **Model Explanation:**
+   - **Random Forest Regressor:**
+     - Random Forest is an ensemble learning method that operates by constructing a multitude of decision trees during training and outputs the average prediction of the individual trees. It's known for its robustness against overfitting and ability to handle large datasets with high dimensionality.
+     - Each tree in the Random Forest is trained on a bootstrapped sample of the data and a subset of features, providing diversity in the ensemble and reducing variance.
+   
+   - **Gradient Boosting Regressor:**
+     - Gradient Boosting is another ensemble learning technique that builds a strong predictive model by sequentially adding weak learners (decision trees) and adjusting them to minimize the errors of the previous models.
+     - It works by fitting the new model to the residual errors made by the previous models, effectively reducing bias and improving accuracy over iterations.
+
+3. **Data Analysis:**
+   - For retraining the models, we performed data analysis to identify potential improvements in model performance. We focused on two main cases:
+
+   - **Case 1: Removing Data with Approved Amount Less Than $100,000:**
+     - After removing instances where the approved reimbursement amount was less than $100,000, we observed a decrease in model accuracy for both the Random Forest Regressor and Gradient Boosting Regressor.
+     - This decrease in accuracy was accompanied by an increase in Mean Absolute Error (MAE), indicating that removing these instances may have removed valuable information from the training data.
+
+   - **Case 2: Removing Data with Requested Amount Greater Than $100,000:**
+     - After removing instances where the requested reimbursement amount was greater than $100,000, we observed an improvement in model accuracy for both regression models.
+     - This improvement was reflected in lower MAE values, suggesting that filtering out instances with exceptionally high reimbursement requests contributed to better model performance.
+
+4. **Evaluation (Retraining):**
+
+   - **Random Forest Regressor:**
+
+     - **Case 1:**
+       - Mean Absolute Error: 30158.60207672956
+       - Mean Squared Error: 4321297181.066088
+       - Root Mean Squared Error: 65736.5741506666
+       - R-squared: 0.8662340476335653
+
+     - **Case 2:**
+       - Mean Absolute Error: 1867.1898695024076
+       - Mean Squared Error: 34146837.63297841
+       - Root Mean Squared Error: 5843.529552674343
+       - R-squared: 0.9419820405763618
+    
+   - **Gradient Boosting Regressor:**
+
+     - **Case 1:**
+       - Mean Absolute Error: 37659.02566044428
+       - Mean Squared Error: 5410344281.050412
+       - Root Mean Squared Error: 73555.04252633134
+       - R-squared: 0.8325225447219864
+
+     - **Case 2:**
+       - Mean Absolute Error: 2393.572409007479
+       - Mean Squared Error: 36689967.70322908
+       - Root Mean Squared Error: 6057.224422392576
+       - R-squared: 0.937661077715592
+
+5. **Conclusion:**
+   - Our analysis and evaluation of retraining the models highlight the importance of carefully selecting data instances for model training. While removing instances with exceptionally high reimbursement requests improved model accuracy, removing instances with lower approved amounts had a negative impact on model performance.
+   - Overall, the Random Forest Regressor outperformed the Gradient Boosting Regressor in terms of accuracy and performance metrics, indicating its suitability for predicting business reimbursements in this context.
+
 
