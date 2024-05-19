@@ -161,14 +161,16 @@ This project aims to develop a machine learning model capable of predicting the 
 4. **Evaluation (Retraining):**
 
    - **Random Forest Regressor:**
-
+     
      - **Case 1:**
+         ![image](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/d5e96a7f-3fe6-49f2-9444-d04055f895e3)
        - Mean Absolute Error: 30158.60207672956
        - Mean Squared Error: 4321297181.066088
        - Root Mean Squared Error: 65736.5741506666
        - R-squared: 0.8662340476335653
 
      - **Case 2:**
+         ![image](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/296b4b14-ff9a-451b-b85f-0bc139fa84cc)
        - Mean Absolute Error: 1867.1898695024076
        - Mean Squared Error: 34146837.63297841
        - Root Mean Squared Error: 5843.529552674343
@@ -177,12 +179,14 @@ This project aims to develop a machine learning model capable of predicting the 
    - **Gradient Boosting Regressor:**
 
      - **Case 1:**
+         ![image](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/ba65f631-cb69-4d57-9614-787cfbc2607b)
        - Mean Absolute Error: 37659.02566044428
        - Mean Squared Error: 5410344281.050412
        - Root Mean Squared Error: 73555.04252633134
        - R-squared: 0.8325225447219864
 
      - **Case 2:**
+         ![image](https://github.com/valzagrainca/Business-Reimbursement-Prediction-Gr6/assets/46811308/d217f6ea-4714-423a-a179-1ab11f714493)
        - Mean Absolute Error: 2393.572409007479
        - Mean Squared Error: 36689967.70322908
        - Root Mean Squared Error: 6057.224422392576
